@@ -5,7 +5,7 @@
 
 <body>
     <div id="load_order">
-        <h1>LOAD ORDER</h1>
+        <h1>RACE LOAD ORDER</h1>
 
         <ul>
             <li>/Race/Common.szs</li>
@@ -20,6 +20,8 @@
 
         <ul>
             <li>80222674: calls EGG_opendvdfile on race started</li>
+            <li>805149c4: DvdArchiveLoad - calls 80222674</li>
+            <li>8052650c (li r30, 0): MultiDvdArchiveLoad - calls DvdArchiveLoad</li>
         </ul>
     </div>
 </body>
